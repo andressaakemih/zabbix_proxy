@@ -1,4 +1,4 @@
-# Instalação Zabbix Proxy
+# Zabbix Proxy
 
 ### Comandos:
 ````
