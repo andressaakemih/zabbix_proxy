@@ -11,7 +11,7 @@ apt update
 apt search zabbix-proxy
 ````
 
-#### * Escolha a versão major compartível com seu zabbix-server (zabbix-server: 5.0 == zabbix-proxy: 5.0)
+#### → Escolha a versão major compartível com seu zabbix-server (zabbix-server: 5.0 == zabbix-proxy: 5.0)
 ````
 apt install zabbix-proxy-sqlite3
 
@@ -22,9 +22,11 @@ vi /etc/zabbix/zabbix_proxy.conf
 - Hostname= (nome_proxy)
 - DBName= (caminho_BD_proxy) {ex: /tmp/zabbixdb}
 
+````
 systemctl restart zabbix-proxy
+````
 
-#### * Será criado o banco do proxy
+#### → Será criado o banco do proxy
 
 
 ## Após o passo a passo de instalação:
