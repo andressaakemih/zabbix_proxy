@@ -1,4 +1,4 @@
-## Instalação Zabbix Proxy
+# Instalação Zabbix Proxy
 
 ## Comandos:
 
@@ -10,30 +10,30 @@ apt update
 
 apt search zabbix-proxy
 
-## Escolha a versão major compartível com seu zabbix-server (zabbix-server: 5.0 == zabbix-proxy: 5.0)
+### Escolha a versão major compartível com seu zabbix-server (zabbix-server: 5.0 == zabbix-proxy: 5.0)
 
 apt install zabbix-proxy-sqlite3
 
 vi /etc/zabbix/zabbix_proxy.conf
 
-## Editar as informações:
+### Editar as informações:
 - Server= (IP_servidor)
 - Hostname= (nome_proxy)
 - DBName= (caminho_BD_proxy) {ex: /tmp/zabbixdb}
 
 systemctl restart zabbix-proxy
 
-### Será criado o banco do proxy
+### - Será criado o banco do proxy
 
 
 ## Após o passo a passo de instalação:
 
-## Cadastrar o Proxy no front-end do Zabbix:
+### Cadastrar o Proxy no front-end do Zabbix:
     
 - Administração → Proxies 
     
 - Nome do proxy == Hostname (configurado no arquivo: zabbix_proxy.conf)
     
-## Cadastrar o Proxy para monitorar
+### Cadastrar o Proxy para monitorar
     
 - Template → Template App Zabbix Proxy
