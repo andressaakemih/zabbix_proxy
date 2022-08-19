@@ -12,6 +12,7 @@ apt search zabbix-proxy
 ````
 
 #### → Escolha a versão major compartível com seu zabbix-server (zabbix-server: 5.0 == zabbix-proxy: 5.0)
+
 ````
 apt install zabbix-proxy-sqlite3
 
